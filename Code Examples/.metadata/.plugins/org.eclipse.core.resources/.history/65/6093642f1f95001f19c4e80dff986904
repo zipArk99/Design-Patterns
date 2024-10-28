@@ -1,0 +1,17 @@
+package com.app.example;
+
+public class EmailAlertObserverImpl implements NotificationAlertObserver {
+	
+	StockObservable observable;
+	
+	public EmailAlertObserverImpl(StockObservable observable) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

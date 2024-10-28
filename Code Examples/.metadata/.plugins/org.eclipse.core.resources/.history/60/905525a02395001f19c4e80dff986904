@@ -1,0 +1,21 @@
+package com.app.example;
+
+public class SmsAlertObserverImpl implements NotificationAlertObserver {
+
+	StockObservable observable;
+
+	public SmsAlertObserverImpl(StockObservable observable) {
+		this.observable = observable;
+	}
+
+	@Override
+	public void update(String itemName) {
+	sendSMS(observable.getStockCount());
+
+	}
+	
+	public void sendSMS(int stockCount) {
+		System.out.println("SMS sent, stock count::"+ stockCount);
+	}
+
+}

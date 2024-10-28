@@ -1,0 +1,8 @@
+package com.app.demo;
+
+public class Vehicle implements DriveStrategy {
+	
+
+
+
+}

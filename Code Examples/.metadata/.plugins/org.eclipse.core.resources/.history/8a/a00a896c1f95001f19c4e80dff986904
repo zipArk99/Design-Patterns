@@ -1,0 +1,20 @@
+package com.app.example;
+
+public class EmailAlertObserverImpl implements NotificationAlertObserver {
+	
+	StockObservable observable;
+	
+	public EmailAlertObserverImpl(StockObservable observable) {
+		this.observable = observable;
+	}
+
+	@Override
+	public void update() {	
+		
+	}
+	
+	public void sendEmail(StockObservable observable) {
+		
+	}
+
+}

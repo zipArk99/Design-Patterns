@@ -1,0 +1,15 @@
+package com.app.example;
+
+public interface Observable {
+
+	public void add(NotificationAlertObserver notificationAlertObserver);
+
+	public void remove(NotificationAlertObserver notificationAlertObserver);
+
+	public void notifyObserver();
+
+	public void setData(int num);
+
+	public int getData();
+
+}

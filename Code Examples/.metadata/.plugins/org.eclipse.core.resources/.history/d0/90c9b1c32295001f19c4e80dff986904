@@ -1,0 +1,11 @@
+package com.app.example;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		EmailAlertObserverImpl client1 = new EmailAlertObserverImpl();
+		
+	}
+
+}

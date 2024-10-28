@@ -1,0 +1,6 @@
+package com.app.demo;
+
+public class NormalCarStrategy implements DriveStrategy {
+
+
+}

@@ -1,0 +1,11 @@
+package com.app.demo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Vehicle vehicle = new Vehicle(new SportsCarStrategy());
+		vehicle.drive();
+
+	}
+
+}

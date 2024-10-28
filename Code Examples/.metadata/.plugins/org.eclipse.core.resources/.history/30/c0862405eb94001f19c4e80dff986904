@@ -1,0 +1,14 @@
+package com.app.demo;
+
+public class Vehicle implements DriveStrategy {
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+
+
+}

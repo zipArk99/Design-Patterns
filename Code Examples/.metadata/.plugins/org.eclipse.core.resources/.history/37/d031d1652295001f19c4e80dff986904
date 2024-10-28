@@ -1,0 +1,5 @@
+package com.app.example;
+
+public class AmdRyzenCpuStockObservable implements StockObservable {
+
+}
