@@ -1,6 +1,0 @@
-package com.app.demo;
-
-public interface DriveStrategy {
-	void drive();
-
-}

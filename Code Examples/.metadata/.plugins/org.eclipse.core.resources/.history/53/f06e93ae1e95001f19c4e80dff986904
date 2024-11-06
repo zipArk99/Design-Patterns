@@ -1,7 +1,0 @@
-package com.app.example;
-
-public interface NotificationAlertObserver {
-	
-	void update();
-
-}
