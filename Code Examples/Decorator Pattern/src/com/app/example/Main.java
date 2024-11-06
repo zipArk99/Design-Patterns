@@ -9,7 +9,7 @@ public class Main {
 		Beverage beverage  = new Cappuccino();
 		
 		BeverageDecorator beverageDecorator = new Almond(beverage);
-		BeverageDecorator beverageDecorator2 = new WippedCream(beverageDecorator);
+		BeverageDecorator beverageDecorator2 = new WhippedCream(beverageDecorator);
 		
 		System.out.println(beverageDecorator2.getCost());
 

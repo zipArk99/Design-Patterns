@@ -1,10 +1,10 @@
 package com.app.example;
 
-public class WippedCream implements BeverageDecorator {
+public class WhippedCream implements BeverageDecorator {
 	
 	Beverage beverage;
 	
-	public WippedCream(Beverage beverage) {
+	public WhippedCream(Beverage beverage) {
 		this.beverage = beverage;
 	}
 
