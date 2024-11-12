@@ -9,9 +9,9 @@ public class Main {
 		Beverage beverage  = new Cappuccino();
 		
 		BeverageDecorator beverageDecorator = new Almond(beverage);
-		BeverageDecorator beverageDecorator2 = new WhippedCream(beverageDecorator);
+		beverageDecorator = new WhippedCream(beverageDecorator);
 		
-		System.out.println(beverageDecorator2.getCost());
+		System.out.println(beverageDecorator.getCost());
 
 	}
 
