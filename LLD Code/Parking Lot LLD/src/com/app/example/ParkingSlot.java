@@ -34,6 +34,13 @@ public class ParkingSlot {
 	public SlotSize getSlotSize() {
 		return slotSize;
 	}
+
+	@Override
+	public String toString() {
+		return "ParkingSlot [vehicle=" + vehicle + ", isOccupied=" + isOccupied + ", slotSize=" + slotSize + "]";
+	}
+	
+	
 	
 	
 }

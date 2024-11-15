@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class VehicleFactory {
 	private Vehicle vehicle;
 	private Scanner scanner = new Scanner(System.in);
+	private Scanner scanner2= new Scanner(System.in);
+
 	private static VehicleFactory vehicleFactory;
 
 	private VehicleFactory() {
@@ -31,24 +33,25 @@ public class VehicleFactory {
 		System.out.println("Enter 3 for bus");
 		int input = scanner.nextInt();
 		System.out.println("Enter vehicle Number::");
-		String vehicleNumber = scanner.nextLine();
+		String vehicleNumber = scanner2.nextLine();
 
 		switch (input) {
-		case 1: {
+		case 1:
 			vehicle = new Car(vehicleNumber);
+			break;
 
-		}
-		case 2: {
+		case 2:
 			vehicle = new Truck(vehicleNumber);
-		}
-		case 3: {
+			break;
+		case 3:
 			vehicle = new Bus(vehicleNumber);
-		}
+			break;
 		default: {
 			System.err.println("Invalid Input");
 		}
-			return vehicle;
+
 		}
+		return vehicle;
 
 	}
 }

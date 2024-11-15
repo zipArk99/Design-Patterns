@@ -4,7 +4,7 @@ enum VehicleSize {
 	MEDIUM, LARGE, EXTRA_LARGE
 }
 
-public class Vehicle {
+public abstract class Vehicle {
 	private final String vehicleNumberPlate;
 	private final VehicleSize vehicleSize;
 	private ParkingTicket parkingTicket;
@@ -29,6 +29,14 @@ public class Vehicle {
 	public void setParkingTicket(ParkingTicket parkingTicket) {
 		this.parkingTicket = parkingTicket;
 	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [vehicleNumberPlate=" + vehicleNumberPlate + ", vehicleSize=" + vehicleSize + ", parkingTicket="
+				+ parkingTicket + "]";
+	}
+	
+	
 	
 	
 

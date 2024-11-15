@@ -5,12 +5,12 @@ import java.util.UUID;
 
 public class ParkingTicket {
 	private final String uniqueNumber;
-	private final int assignedLotNumber;
+	private final int assignedSlotNumber;
 	private final LocalDateTime tickedAssignedTime;
 
-	public ParkingTicket(int assignedLotNumber) {
+	public ParkingTicket(int assignedSlotNumber) {
 		this.uniqueNumber = UUID.randomUUID().toString();
-		this.assignedLotNumber = assignedLotNumber;
+		this.assignedSlotNumber = assignedSlotNumber;
 		this.tickedAssignedTime = LocalDateTime.now();
 
 	}
@@ -19,12 +19,18 @@ public class ParkingTicket {
 		return uniqueNumber;
 	}
 
-	public int getAssignedLotNumber() {
-		return assignedLotNumber;
+	public int getAssignedSlotNumber() {
+		return assignedSlotNumber;
 	}
 
 	public LocalDateTime getTickedAssignedTime() {
 		return tickedAssignedTime;
+	}
+
+	@Override
+	public String toString() {
+		return "ParkingTicket [uniqueNumber=" + uniqueNumber + ", assignedLotNumber=" + assignedSlotNumber
+				+ ", tickedAssignedTime=" + tickedAssignedTime + "]";
 	}
 	
 	
